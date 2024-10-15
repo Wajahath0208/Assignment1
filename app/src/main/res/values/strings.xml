@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyApplication0ct08</string>
+    <string name="wajahath">wajahath</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="eg_rahul123">Eg:Rahul123</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="terms_conditions">I agree to the Terms and Conditions</string>
+    <string name="create_account">Create Account</string>
+</resources>

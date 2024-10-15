@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.75"
+    android:background="@drawable/bg_img"
+    android:backgroundTint="#3F000000"
+    android:backgroundTintMode="src_over"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_txt"
+        android:fontFamily="cursive"
+        android:text="@string/create_your_account"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="27dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:ems="14"
+        android:padding="10dp"
+        android:background="@drawable/custom_input"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:textColorHint="#050505"
+        android:textColorLink="#090909"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_txt" />
+    <EditText
+        android:id="@+id/mail_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="27dp"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:ems="14"
+        android:padding="10dp"
+        android:background="@drawable/custom_input"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#050505"
+        android:textColorLink="#090909"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+    <EditText
+        android:id="@+id/emt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="27dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:ems="14"
+        android:padding="10dp"
+        android:background="@drawable/custom_input"
+        android:hint="@string/password"
+        android:inputType="text"
+        android:textColorHint="#050505"
+        android:textColorLink="#090909"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail_id" />
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="27dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:ems="14"
+        android:padding="10dp"
+        android:background="@drawable/custom_input"
+        android:hint="@string/confirm_password"
+        android:inputType="text"
+        android:textColorHint="#050505"
+        android:textColorLink="#090909"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emt_password" />
+
+    <CheckBox
+        android:id="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="@string/terms_conditions"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+    <Button
+        android:id="@+id/account_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box"
+        android:layout_marginHorizontal="28dp"
+        android:text="@string/create_account"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#C377F8"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
